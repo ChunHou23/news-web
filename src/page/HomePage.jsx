@@ -1,10 +1,18 @@
 import { Col, Container, Row } from "react-bootstrap";
 import { connect } from 'react-redux';
 import HeaderComponent from "../component/HeaderComponent";
-import { findNewsData } from '../redux/actions/NewsAction';
 import NewsInfoComponent from "../component/NewsInfoComponent";
+import { TailSpin } from 'react-loader-spinner';
 
-const HomePage = ({ newsInformation }) => {
+const HomePage = ({ newsInformation, loading }) => {
+    console.log("isloafing", loading)
+    if (loading) {
+        return (
+            <div className="spinner-container">
+                <TailSpin color="#00BFFF" height={80} width={80} />
+            </div>
+        );
+    }
     return (
         <>
             <HeaderComponent />
@@ -33,6 +41,7 @@ const HomePage = ({ newsInformation }) => {
 
 const mapStateToProps = (state) => ({
     newsInformation: state.newsInfo.articles,
+    loading: state.newsInfo.loading,
 });
 
 const mapDispatchToProps = (dispatch) => ({
