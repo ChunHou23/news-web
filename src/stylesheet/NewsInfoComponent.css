@@ -1,0 +1,33 @@
+.info-box {
+    background-color: #ffffff; /* White background for the box */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); /* Shadow effect for the box */
+    padding: 20px; /* Padding inside the box */
+    text-align: center; /* Center-align text */
+    margin-top: 20px; /* Space above the box */
+}
+
+.info-box h3 {
+    margin-top: 0; /* Remove top margin from heading */
+    margin-bottom: 15px; /* Add space below the heading */
+}
+
+.info-box p {
+    color: #333333; /* Dark text color for readability */
+    margin-bottom: 0; /* Remove bottom margin from paragraph */
+}
+
+.info-box img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 15px;
+}
+
+.clickable-container {
+    cursor: pointer; /* Changes cursor to a pointer to indicate it's clickable */
+    transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* .clickable-container:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+} */
