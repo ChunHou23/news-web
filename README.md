@@ -1,2 +1,3 @@
-# Getting Started with Create React App
+# News Web Demo
+using news api
 
